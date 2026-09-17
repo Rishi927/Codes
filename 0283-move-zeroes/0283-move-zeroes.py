@@ -8,12 +8,12 @@ class Solution(object):
         if len(nums)==1:
             return 
         i=0
-        while(i<n):
+        while(i<len(nums)):
             if nums[i]==0:
                 break
             i+=1
-            if i ==len(nums):
-                return
+        if i==len(nums):
+            return
         j=i+1
         while(j<len(nums)):
             if nums[j]!=0:
